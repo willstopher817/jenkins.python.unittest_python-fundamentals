@@ -7,7 +7,8 @@ timestamps {
         }
         stage ('Python-test - Build') {
             script {
-                bat "python unittest discover -s ./src/test/ -p '*_test.py'"
+                bat "bash"
+                sh "python unittest discover -s ./src/test/ -p '*_test.py'"
             }
         }
     }
