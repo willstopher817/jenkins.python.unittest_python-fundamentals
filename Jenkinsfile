@@ -7,7 +7,7 @@ timestamps {
         }
         stage ('Python-test - Build') {
             script {
-                powershell "python -m unittest discover -s ./src/test/ -p '*_test.py '"
+                powershell "python3 -m unittest discover -s ./src/test/ -p '*_test.py '"
             }
         }
     }
