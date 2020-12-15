@@ -4,7 +4,7 @@ pipeline {
         stage ('Build') {
             steps {
                 script {
-                    echo "Hello"
+                    sh "python unittest discover -s ./src/test/ -p '*_test.py'"
                 }
             }
         }
