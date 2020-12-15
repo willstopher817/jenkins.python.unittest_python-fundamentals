@@ -7,7 +7,7 @@ timestamps {
         }
         stage ('Python-test - Build') {
             script {
-                "py unittest discover -s ./src/test/ -p '*_test.py'"
+                py unittest discover -s ./src/test/ -p '*_test.py'
             }
         }
     }
